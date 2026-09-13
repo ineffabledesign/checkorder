@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cek Status Pre Order — Ineffable Design</title>
+<meta name="description" content="Cek status pre order kamu dengan memasukkan email yang kamu gunakan saat memesan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <div class="scene">
+    <div class="floaters" aria-hidden="true">
+      <span class="floater f1">✦</span>
+      <span class="floater f2">♡</span>
+      <span class="floater f3">✧</span>
+      <span class="floater f4">✦</span>
+      <span class="floater f5">♡</span>
+    </div>
+
+    <main class="card" id="card">
+
+      <!-- STATE: search -->
+      <section class="state state--search" id="state-search">
+        <p class="eyebrow">Ineffable Design · AUGUST PRE ORDER</p>
+        <h1>Mau cek status<br>pesanan kamu?</h1>
+        <p class="sub">Masukkan email yang kamu pakai waktu mengisi form pre order ya, kak.</p>
+
+        <form id="search-form" autocomplete="off">
+          <label for="email-input" class="sr-only">Email</label>
+          <input
+            type="email"
+            id="email-input"
+            name="email"
+            placeholder="emailkamu@gmail.com"
+            required
+          >
+          <button type="submit" id="submit-btn">
+            <span class="btn-label">Cek Status</span>
+            <span class="btn-spinner" aria-hidden="true"></span>
+          </button>
+        </form>
+
+        <p class="hint">Data kamu cuma keluar kalau emailnya cocok — nggak ada yang lain yang bisa lihat punya kamu.</p>
+      </section>
+
+      <!-- STATE: not found -->
+      <section class="state state--notfound" id="state-notfound" hidden>
+        <div class="icon-badge icon-badge--sad">⌒</div>
+        <h2>Maaf, kamu belum pre order sepertinya</h2>
+        <p class="sub">Coba cek lagi email yang kamu masukkan, kali aja beda sama yang dipakai waktu isi form kemarin.</p>
+        <button class="btn-ghost" id="btn-retry-notfound">Coba email lain</button>
+        <p class="footnote footnote--notfound">Kalau merasa udah order tapi statusnya gak ketemu, hubungin admin lewat klik <a href="https://www.instagram.com/direct/t/ineffabled.id" target="_blank" rel="noopener">Inbox</a> atau langsung ke Instagram kita di <a href="https://www.instagram.com/ineffabled.id" target="_blank" rel="noopener">@Ineffabled.id</a> 💌</p>
+      </section>
+
+      <!-- STATE: result -->
+      <section class="state state--result" id="state-result" hidden>
+        <button class="btn-back" id="btn-back" aria-label="Cek email lain">← email lain</button>
+
+        <div class="result-head">
+          <p class="eyebrow">Halo,</p>
+          <h2 id="result-name">—</h2>
+        </div>
+
+        <div class="status-pill" id="status-pill">
+          <span class="status-dot"></span>
+          <span id="status-text">—</span>
+        </div>
+
+        <div class="payment-block" id="payment-block" hidden>
+          <div class="payment-row">
+            <span>Total harga</span>
+            <span id="payment-total">—</span>
+          </div>
+          <div class="payment-row">
+            <span>Sudah dibayar</span>
+            <span id="payment-paid">—</span>
+          </div>
+          <div class="payment-row payment-row--remaining" id="payment-remaining-row">
+            <span>Sisa pelunasan</span>
+            <span id="payment-remaining">—</span>
+          </div>
+        </div>
+
+        <div class="items-block">
+          <p class="items-label">Item pesanan</p>
+          <ul class="items-list" id="items-list"></ul>
+        </div>
+
+        <p class="footnote">Kalau ada order yang gak tepat, bisa hubungin admin lewat klik <a href="https://www.instagram.com/direct/t/ineffabled.id" target="_blank" rel="noopener">Inbox</a> atau langsung ke Instagram kita di <a href="https://www.instagram.com/ineffabled.id" target="_blank" rel="noopener">@Ineffabled.id</a> 💌</p>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <p>dibikin dengan 🩰 buat teman-teman yang udah pre order</p>
+    </footer>
+  </div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
