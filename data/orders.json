@@ -1050,25 +1050,6 @@
       "sudahBayar": 0
     },
     {
-      "emailHash": "4c660ca225892691707acbb8f0c7c960ebbf00664f54d01cb1647cd7db8429e9",
-      "name": "Anisa",
-      "contact": "andyarsm (IG)",
-      "items": [
-        {
-          "label": "Totebag",
-          "detail": "Bubble Gum (1)"
-        },
-        {
-          "label": "Emoney Stickers",
-          "detail": "I need Rest (1)"
-        }
-      ],
-      "paymentMethod": "QRIS",
-      "status": "Di Proses",
-      "totalHarga": 0,
-      "sudahBayar": 0
-    },
-    {
       "emailHash": "026b0a14c53d1fa8242fdf31d0ec98a1cf8f8fd31e6c3bf2ce8b0b21d59f9fd4",
       "name": "cacha",
       "contact": "ig @brisbance",
