@@ -8793,6 +8793,29 @@
       "status": "Di Proses",
       "totalHarga": 0,
       "sudahBayar": 0
+    },
+    {
+      "emailHash": "88f827b8a3fb38f0815b062c006a35a49d9e722f0ce28ebf80f75b9c22b8b26d",
+      "name": "Arfa",
+      "contact": "id line: arfa090, wa:••••••••3889, ig:@clfoverry",
+      "items": [
+        {
+          "label": "Totebag",
+          "detail": "Leo Grumpy (1), Bubble Gum (1)"
+        },
+        {
+          "label": "Pin Button Set",
+          "detail": "I Need Holiday (1)"
+        },
+        {
+          "label": "Holo Keychain",
+          "detail": "C (1)"
+        }
+      ],
+      "paymentMethod": null,
+      "status": "Di Proses",
+      "totalHarga": 224000,
+      "sudahBayar": 154000
     }
   ]
 }
