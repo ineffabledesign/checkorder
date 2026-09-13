@@ -92,29 +92,6 @@
       "sudahBayar": 125000
     },
     {
-      "emailHash": "a9e74ad7c8b56a322e46d6486b8cbdaf6dddee2559e8732f832771b0627bc8cc",
-      "name": "Arfa",
-      "contact": "id line: arfa090, wa:••••••••3889, ig:@clfoverry",
-      "items": [
-        {
-          "label": "Totebag",
-          "detail": "Leo Grumpy (1), Bubble Gum (1)"
-        },
-        {
-          "label": "Pin Button Set",
-          "detail": "I Need Holiday (1)"
-        },
-        {
-          "label": "Holo Keychain",
-          "detail": "C (1)"
-        }
-      ],
-      "paymentMethod": "QRIS",
-      "status": "Di Proses",
-      "totalHarga": 0,
-      "sudahBayar": 0
-    },
-    {
       "emailHash": "125f32645f507ba7cabce191b9a84d1d594e304e43c6e1aab4d54215d5c71e8b",
       "name": "totebag (Professional Winker)",
       "contact": "•••••••2665",
