@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — Ineffable Design</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+  <div class="scene admin-scene">
+    <div class="floaters" aria-hidden="true">
+      <span class="floater f1">✦</span>
+      <span class="floater f2">♡</span>
+      <span class="floater f4">✦</span>
+    </div>
+
+    <!-- STATE: login (token entry) -->
+    <main class="card" id="login-card">
+      <p class="eyebrow">Ineffable Design · Admin</p>
+      <h1>Masuk ke Admin</h1>
+      <p class="sub">Masukkan GitHub Personal Access Token kamu. Ini disimpan cuma di browser kamu sendiri, gak dikirim ke mana-mana selain langsung ke GitHub.</p>
+
+      <form id="login-form" autocomplete="off">
+        <label for="token-input" class="sr-only">Token</label>
+        <input
+          type="password"
+          id="token-input"
+          placeholder="ghp_xxxxxxxxxxxxxxxxxxxx"
+          required
+        >
+        <button type="submit" id="login-btn">
+          <span class="btn-label">Masuk</span>
+          <span class="btn-spinner" aria-hidden="true"></span>
+        </button>
+      </form>
+      <p class="error-text" id="login-error" hidden></p>
+
+      <button class="link-btn" id="toggle-help">Belum punya token? Lihat caranya</button>
+      <div class="help-box" id="help-box" hidden>
+        <ol>
+          <li>Buka <a href="https://github.com/settings/tokens?type=beta" target="_blank" rel="noopener">github.com/settings/tokens</a> (harus login dulu)</li>
+          <li>Tap <strong>Generate new token</strong> (pilih "Fine-grained token")</li>
+          <li>Kasih nama bebas, contoh "admin-preorder"</li>
+          <li>Expiration: pilih durasi yang kamu mau (misal 90 hari, nanti bikin baru lagi kalau habis)</li>
+          <li><strong>Repository access</strong> → pilih "Only select repositories" → pilih repo <code>postatusaugust</code> ini aja</li>
+          <li><strong>Permissions</strong> → cari "Contents" → set jadi <strong>Read and write</strong></li>
+          <li>Generate token, copy hasilnya (cuma muncul sekali!), paste di sini</li>
+        </ol>
+        <p class="warn">⚠️ Jangan share token ini ke siapapun. Siapapun yang pegang token ini bisa ubah isi repo kamu.</p>
+      </div>
+    </main>
+
+    <!-- STATE: dashboard -->
+    <main class="card card--wide" id="dashboard" hidden>
+      <div class="dash-header">
+        <div>
+          <p class="eyebrow">Ineffable Design · Admin</p>
+          <h1 class="dash-title">Kelola Pesanan</h1>
+        </div>
+        <div class="dash-header-actions">
+          <button class="btn-ghost btn-small" id="btn-logout">Keluar</button>
+        </div>
+      </div>
+
+      <button class="btn-add-new" id="btn-add-new">+ Tambah Pesanan Baru</button>
+
+      <div class="search-row">
+        <input type="text" id="search-input" placeholder="Cari nama atau email...">
+        <span class="result-count" id="result-count"></span>
+      </div>
+
+      <div class="filter-row" id="filter-row">
+        <button class="chip active" data-filter="all">Semua</button>
+        <button class="chip" data-filter="pending">Di Proses</button>
+        <button class="chip" data-filter="confirmed">Terkonfirmasi</button>
+        <button class="chip" data-filter="shipped">Dikirim</button>
+        <button class="chip" data-filter="unpaid">Belum Lunas</button>
+      </div>
+
+      <div class="select-all-row">
+        <label class="select-all-label">
+          <input type="checkbox" id="select-all-checkbox">
+          <span>Pilih semua yang tampil</span>
+        </label>
+      </div>
+
+      <div class="bulk-bar" id="bulk-bar" hidden>
+        <span id="bulk-count">0 pesanan dipilih</span>
+        <div class="bulk-bar-actions">
+          <select id="bulk-status-select"></select>
+          <button id="btn-apply-bulk">Terapkan</button>
+          <button class="btn-clear-selection" id="btn-clear-selection">Batal pilih</button>
+        </div>
+      </div>
+
+      <div class="order-list" id="order-list"></div>
+
+      <div class="save-bar" id="save-bar" hidden>
+        <span id="save-status">Ada perubahan belum disimpan</span>
+        <button id="btn-save-all">Simpan Semua Perubahan</button>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <p>halaman ini private — jangan share link ini ke customer</p>
+    </footer>
+
+    <!-- MODAL: add new order -->
+    <div class="modal-overlay" id="add-modal" hidden>
+      <div class="modal-card">
+        <div class="modal-header">
+          <h2>Tambah Pesanan Baru</h2>
+          <button class="modal-close" id="btn-close-modal" aria-label="Tutup">✕</button>
+        </div>
+
+        <form id="add-form">
+          <div class="field">
+            <label for="new-name">Nama Pemesan</label>
+            <input type="text" id="new-name" required placeholder="Nama lengkap">
+          </div>
+
+          <div class="field">
+            <label for="new-email">Email</label>
+            <input type="email" id="new-email" required placeholder="emailnya@gmail.com">
+          </div>
+
+          <div class="field">
+            <label for="new-contact">Kontak (LINE/WA/IG)</label>
+            <input type="text" id="new-contact" placeholder="@username atau nomor WA">
+          </div>
+
+          <div class="field">
+            <label>Item Pesanan</label>
+            <div id="new-items-list"></div>
+            <button type="button" class="btn-add-item" id="btn-add-item-row">+ Tambah item</button>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="new-total">Total Harga (Rp)</label>
+              <input type="number" id="new-total" min="0" step="1000" value="0">
+            </div>
+            <div class="field">
+              <label for="new-paid">Sudah Dibayar (Rp)</label>
+              <input type="number" id="new-paid" min="0" step="1000" value="0">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="new-status">Status</label>
+            <select id="new-status"></select>
+          </div>
+
+          <p class="modal-error" id="add-error" hidden></p>
+
+          <div class="modal-actions">
+            <button type="button" class="btn-ghost" id="btn-cancel-add">Batal</button>
+            <button type="submit" id="btn-submit-add">Simpan Pesanan</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<script src="admin.js"></script>
+</body>
+</html>
