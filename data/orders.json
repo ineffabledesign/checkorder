@@ -361,7 +361,7 @@
         }
       ],
       "paymentMethod": "QRIS — Total: 331.000",
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 436000,
       "sudahBayar": 331000
     },
