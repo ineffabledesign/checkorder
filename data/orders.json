@@ -9279,6 +9279,21 @@
       "status": "Di Proses",
       "totalHarga": 95000,
       "sudahBayar": 60000
+    },
+    {
+      "emailHash": "22d9a774620ac23c509fc3169013237c6901dcf4739bf8fbf3543f7a41d4a11f",
+      "name": "aurel",
+      "contact": "@dzkraurll__ (insta) wa : •••••3745",
+      "items": [
+        {
+          "label": "Tote Bag",
+          "detail": "Professional Winker (1)"
+        }
+      ],
+      "paymentMethod": null,
+      "status": "Di Proses",
+      "totalHarga": 95000,
+      "sudahBayar": 60000
     }
   ]
 }
