@@ -3088,15 +3088,11 @@
         {
           "label": "Totebag",
           "detail": "Leo Grumpy (1)"
-        },
-        {
-          "label": "Emotional Pouch",
-          "detail": "Bubblegum (NEW!) (3)"
         }
       ],
       "paymentMethod": "QRIS",
       "status": "Di Proses",
-      "totalHarga": 212000,
+      "totalHarga": 95000,
       "sudahBayar": 60000
     },
     {
