@@ -6095,15 +6095,11 @@
         {
           "label": "Totebag",
           "detail": "Bubble Gum (1)"
-        },
-        {
-          "label": "Emotional Pouch",
-          "detail": "Polkachic (4)"
         }
       ],
       "paymentMethod": "QRIS",
       "status": "Di Proses",
-      "totalHarga": 251000,
+      "totalHarga": 95000,
       "sudahBayar": 60000
     },
     {
