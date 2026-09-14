@@ -9264,6 +9264,21 @@
       "status": "Di Proses",
       "totalHarga": 49000,
       "sudahBayar": 49000
+    },
+    {
+      "emailHash": "6909882b9773cea1e18c6658423fda4f360ff238ad12761026d07e31a1a466ab",
+      "name": "Ghazya",
+      "contact": "indeedzy (line)",
+      "items": [
+        {
+          "label": "Tote Bag",
+          "detail": "Leo Grumpy (1)"
+        }
+      ],
+      "paymentMethod": null,
+      "status": "Di Proses",
+      "totalHarga": 95000,
+      "sudahBayar": 60000
     }
   ]
 }
