@@ -9130,6 +9130,29 @@
       "status": "Di Proses",
       "totalHarga": 164000,
       "sudahBayar": 129000
+    },
+    {
+      "emailHash": "5a6978fab1ea1c2ea0b47f84437614b8b8974da99943efbe7a446bb9e213dd3c",
+      "name": "Hasa",
+      "contact": "id line : @fuupie / ig : @wijujeruk",
+      "items": [
+        {
+          "label": "Tote Bag",
+          "detail": "Bubble Gum (1)"
+        },
+        {
+          "label": "Pin Button Set",
+          "detail": "I Need Holiday (1)"
+        },
+        {
+          "label": "Glossy Square Pin",
+          "detail": "A (1)"
+        }
+      ],
+      "paymentMethod": null,
+      "status": "Di Proses",
+      "totalHarga": 129000,
+      "sudahBayar": 94000
     }
   ]
 }
