@@ -9180,6 +9180,21 @@
       "status": "Di Proses",
       "totalHarga": 217000,
       "sudahBayar": 154000
+    },
+    {
+      "emailHash": "04c6eeaea573f0033d09beb2fec4b57e5e6777c6b44d1ffad2684e17bbe9af57",
+      "name": "Adinda Fadia",
+      "contact": "iaskednopineapple (ig) / •••••2019",
+      "items": [
+        {
+          "label": "Tote Bag",
+          "detail": "Ms. Sailor (1)"
+        }
+      ],
+      "paymentMethod": null,
+      "status": "Di Proses",
+      "totalHarga": 95000,
+      "sudahBayar": 60000
     }
   ]
 }
