@@ -8981,6 +8981,21 @@
       "status": "Di Proses",
       "totalHarga": 68000,
       "sudahBayar": 35000
+    },
+    {
+      "emailHash": "495c5ccc51f8a7dbce6098c602a52aa94aba1e8174f461bbee587d3874d99dbb",
+      "name": "zaskia",
+      "contact": "ig : kizasoul",
+      "items": [
+        {
+          "label": "Tote Bag",
+          "detail": "Bubble Gum (1)"
+        }
+      ],
+      "paymentMethod": null,
+      "status": "Di Proses",
+      "totalHarga": 95000,
+      "sudahBayar": 60000
     }
   ]
 }
