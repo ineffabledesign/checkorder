@@ -9019,6 +9019,29 @@
       "status": "Di Proses",
       "totalHarga": 176000,
       "sudahBayar": 176000
+    },
+    {
+      "emailHash": "7aaf4c136283f313822367f15ad69467a3cf995b2d4f09ed73219b716673a566",
+      "name": "Delia",
+      "contact": "•••••5656/ @daeyia",
+      "items": [
+        {
+          "label": "Tote Bag",
+          "detail": "Professional Winker (1)"
+        },
+        {
+          "label": "Pin Button Set",
+          "detail": "Im Not You Darling (1)"
+        },
+        {
+          "label": "Holo Keychain",
+          "detail": "B (2)"
+        }
+      ],
+      "paymentMethod": null,
+      "status": "Di Proses",
+      "totalHarga": 144000,
+      "sudahBayar": 94000
     }
   ]
 }
