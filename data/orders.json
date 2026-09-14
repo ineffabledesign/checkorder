@@ -8781,6 +8781,25 @@
       "status": "Di Proses",
       "totalHarga": 224000,
       "sudahBayar": 154000
+    },
+    {
+      "emailHash": "2c244ad75e91272fab048186f80d950747d2eee3fb7e0b7053a5b3308d511388",
+      "name": "Angel",
+      "contact": "‪•••••9062‬ / @unkn0w.angel",
+      "items": [
+        {
+          "label": "Totebag",
+          "detail": "Professional Winker (1)"
+        },
+        {
+          "label": "Glitter Die Cut Stickers",
+          "detail": "E (1), G (1), H (1), K (1)"
+        }
+      ],
+      "paymentMethod": null,
+      "status": "Di Proses",
+      "totalHarga": 115000,
+      "sudahBayar": 80000
     }
   ]
 }
