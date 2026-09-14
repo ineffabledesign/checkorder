@@ -3947,16 +3947,12 @@
       "items": [
         {
           "label": "Totebag",
-          "detail": "Professional Winker (2)"
-        },
-        {
-          "label": "Holo Keychain",
-          "detail": "D (4)"
+          "detail": "Professional Winker (1)"
         }
       ],
       "paymentMethod": "QRIS",
       "status": "Di Proses",
-      "totalHarga": 250000,
+      "totalHarga": 95000,
       "sudahBayar": 60000
     },
     {
