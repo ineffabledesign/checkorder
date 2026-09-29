@@ -1,0 +1,70 @@
+/* QRIS + upload bukti TF — memakai variabel warna dari style.css */
+
+.proof-box {
+  margin-bottom: 24px;
+  padding-top: 20px;
+  border-top: 1px dashed var(--line);
+}
+
+.proof-qris {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 14px;
+  border-radius: 14px;
+  border: 1.5px solid var(--line);
+}
+
+.proof-note {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  margin: 0 0 16px;
+}
+
+.proof-note strong { color: var(--ink); }
+
+.proof-pick {
+  display: block;
+  padding: 14px 16px;
+  border: 1.5px dashed var(--pink);
+  border-radius: 14px;
+  background: var(--pink-soft);
+  color: var(--pink-deep);
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+
+.proof-pick:focus-within { box-shadow: 0 0 0 4px var(--pink-soft); border-color: var(--pink-deep); }
+
+.proof-send {
+  width: 100%;
+  margin-top: 10px;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 16px;
+  background: var(--pink);
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.proof-send:hover:not(:disabled) { background: var(--pink-deep); }
+.proof-send:disabled { opacity: 0.45; cursor: default; }
+
+.proof-msg {
+  min-height: 1em;
+  margin: 10px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  text-align: center;
+}
+
+.proof-msg.is-ok { color: var(--success); font-weight: 600; }
+.proof-msg.is-err { color: #C0433F; font-weight: 600; }
