@@ -16,6 +16,7 @@ const STATE = {
   sha: null,          // current file's git blob sha, required to commit an update
   dirty: new Set(),    // emailHashes with unsaved local edits
   selected: new Set(), // emailHashes checked for bulk action
+  proofs: {},          // emailHash -> {at}: bukti TF yang sudah masuk (dari Google Drive)
   filter: 'all',
   query: '',
 };
@@ -195,6 +196,7 @@ async function enterDashboard() {
     STATE.orders = data.orders;
     STATE.sha = sha;
     renderList();
+    loadProofs().then(renderList);
   } catch (err) {
     els.orderList.innerHTML = `<p class="empty-state">${err.message}</p>`;
   }
@@ -206,6 +208,7 @@ function matchesFilter(order) {
   if (STATE.filter === 'pending') return styleForStatus(order.status) === 'status-pending';
   if (STATE.filter === 'confirmed') return styleForStatus(order.status) === 'status-confirmed';
   if (STATE.filter === 'shipped') return styleForStatus(order.status) === 'status-shipped';
+  if (STATE.filter === 'proof') return !!STATE.proofs[order.emailHash] && Number(order.totalHarga || 0) > Number(order.sudahBayar || 0);
   if (STATE.filter === 'unpaid') return Number(order.totalHarga || 0) > Number(order.sudahBayar || 0);
   return true;
 }
@@ -238,6 +241,7 @@ function buildOrderCard(order) {
 
   const itemsSummary = (order.items || []).map(i => i.label).join(', ') || 'Tidak ada item';
   const badgeClass = styleForStatus(order.status);
+  const proof = STATE.proofs[order.emailHash];
 
   card.innerHTML = `
     <div class="order-card-top">
@@ -246,6 +250,7 @@ function buildOrderCard(order) {
         <div class="order-card-name">${escapeHtml(order.name)}</div>
         <div class="order-card-email">${escapeHtml(order.contact || '')}</div>
         <div class="order-card-items">${escapeHtml(itemsSummary)}</div>
+        ${proof ? '<div class="order-card-proof">📎 Bukti TF masuk</div>' : ''}
       </div>
       <span class="order-card-badge status-pill ${badgeClass}">${escapeHtml(order.status)}</span>
     </div>
@@ -269,6 +274,11 @@ function buildOrderCard(order) {
       <div class="remaining-preview">
         Sisa pelunasan: <strong class="f-remaining-text"></strong>
       </div>
+      ${proof ? `<div class="proof-row">
+        <button type="button" class="btn-proof-view">Lihat bukti TF</button>
+        <button type="button" class="btn-proof-paid">Tandai lunas</button>
+        <span class="proof-date">Dikirim ${escapeHtml(proof.at)}</span>
+      </div>` : ''}
     </div>
   `;
 
@@ -323,6 +333,18 @@ function buildOrderCard(order) {
   statusSelect.addEventListener('change', markDirty);
   totalInput.addEventListener('input', markDirty);
   paidInput.addEventListener('input', markDirty);
+
+  const btnView = card.querySelector('.btn-proof-view');
+  if (btnView) {
+    btnView.addEventListener('click', () => showProof(order));
+    // Jalan pintas saja: isi "Sudah Dibayar" = Total, lewat jalur edit yang sama.
+    // Tetap harus tekan "Simpan Semua Perubahan" — tidak ada jalur tulis baru.
+    card.querySelector('.btn-proof-paid').addEventListener('click', () => {
+      if (!Number(totalInput.value)) { alert('Isi Total Harga dulu, baru tandai lunas.'); return; }
+      paidInput.value = totalInput.value;
+      paidInput.dispatchEvent(new Event('input'));
+    });
+  }
 
   return card;
 }
@@ -580,6 +602,42 @@ els.btnSaveAll.addEventListener('click', async () => {
     els.btnSaveAll.textContent = 'Simpan Semua Perubahan';
   }
 });
+
+// ---------- bukti TF (Google Drive lewat Apps Script) ----------
+
+async function proofCall(body) {
+  const res = await fetch(window.PROOF_API, {
+    method: 'POST',
+    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+    body: JSON.stringify({ ...body, token: STATE.token }),
+  });
+  return res.json();
+}
+
+async function loadProofs() {
+  if (!window.PROOF_API || window.PROOF_API.includes('PASTE')) return;
+  try {
+    const r = await proofCall({ action: 'list' });
+    if (r.proofs) STATE.proofs = r.proofs;
+  } catch { /* bukti gagal dimuat: daftar pesanan tetap jalan normal */ }
+}
+
+async function showProof(order) {
+  const ov = document.createElement('div');
+  ov.className = 'modal-overlay';
+  ov.innerHTML = `<div class="modal-card"><div class="modal-header"><h2>${escapeHtml(order.name)}</h2><button class="modal-close" aria-label="Tutup">✕</button></div><p class="empty-state">Memuat bukti...</p></div>`;
+  const close = () => ov.remove();
+  ov.addEventListener('click', e => { if (e.target === ov) close(); });
+  ov.querySelector('.modal-close').addEventListener('click', close);
+  document.body.appendChild(ov);
+  try {
+    const r = await proofCall({ action: 'view', hash: order.emailHash });
+    if (!r.data) throw new Error(r.error || 'Bukti tidak ditemukan.');
+    ov.querySelector('.empty-state').outerHTML = `<img class="proof-img" src="data:${r.mime};base64,${r.data}" alt="Bukti TF">`;
+  } catch (err) {
+    ov.querySelector('.empty-state').textContent = err.message;
+  }
+}
 
 // ---------- boot ----------
 
