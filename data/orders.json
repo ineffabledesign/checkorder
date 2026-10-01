@@ -51,7 +51,7 @@
       "paymentMethod": "QRIS",
       "status": "Di Proses",
       "totalHarga": 107000,
-      "sudahBayar": 79000
+      "sudahBayar": 107000
     },
     {
       "emailHash": "216f1c7bfab3e1e3101e8c5c570e7316204e49617e4dbe0cddf814b7ab2041e5",
@@ -210,7 +210,7 @@
       "paymentMethod": "QRIS — 130 ribu",
       "status": "Di Proses",
       "totalHarga": 179000,
-      "sudahBayar": 130000
+      "sudahBayar": 179000
     },
     {
       "emailHash": "f475bbc263f5af4c820ebef967e98140b16f1ffea1755f25050d2ba71d002351",
@@ -259,7 +259,7 @@
       "paymentMethod": "QRIS",
       "status": "Di Proses",
       "totalHarga": 95000,
-      "sudahBayar": 60000
+      "sudahBayar": 95000
     },
     {
       "emailHash": "075075eafffd522a7ea5877d815750ced8476d3c3c554998cf15cc7f55f66e08",
@@ -316,7 +316,7 @@
       "paymentMethod": "QRIS",
       "status": "Di Proses",
       "totalHarga": 110000,
-      "sudahBayar": 75000
+      "sudahBayar": 110000
     },
     {
       "emailHash": "49b209c610a9ea337976705e829e35e2f72427dccef623e5f05a78917bee688c",
@@ -438,7 +438,7 @@
       "paymentMethod": "QRIS",
       "status": "Di Proses",
       "totalHarga": 95000,
-      "sudahBayar": 60000
+      "sudahBayar": 95000
     },
     {
       "emailHash": "a7a303a535ef0b117cdcf8c07232299adf6e1099e00238a0a6463f7969b6780b",
@@ -9326,7 +9326,7 @@
       "paymentMethod": null,
       "status": "Di Proses",
       "totalHarga": 95000,
-      "sudahBayar": 60000
+      "sudahBayar": 95000
     },
     {
       "emailHash": "5ca243e28cf78d7847b38c8013269ec81e08e10e199c71f827a9f3629a292a25",
@@ -9356,7 +9356,7 @@
       "paymentMethod": null,
       "status": "Di Proses",
       "totalHarga": 68000,
-      "sudahBayar": 40000
+      "sudahBayar": 68000
     },
     {
       "emailHash": "bbc4a0ca53c3c475d27d5d143e3c6b4ecc30840cf343d71b58310acc06f92af7",
@@ -9375,7 +9375,7 @@
       "paymentMethod": null,
       "status": "Di Proses",
       "totalHarga": 107000,
-      "sudahBayar": 79000
+      "sudahBayar": 107000
     },
     {
       "emailHash": "40f2e31b7f962811ae61b958f376a10b4effe52c4c37064398137295e6f5d992",
