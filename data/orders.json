@@ -950,8 +950,8 @@
       ],
       "paymentMethod": "QRIS — 758000",
       "status": "Di Proses",
-      "totalHarga": 44000,
-      "sudahBayar": 39000
+      "totalHarga": 870000,
+      "sudahBayar": 758000
     },
     {
       "emailHash": "cc1722c08f791f722e3a5aa51f6b7f4616c6e7bffa12e075d7679ac101a311cc",
