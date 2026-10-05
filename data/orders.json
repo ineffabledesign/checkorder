@@ -9324,7 +9324,7 @@
         }
       ],
       "paymentMethod": null,
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 95000,
       "sudahBayar": 95000
     },
@@ -9354,7 +9354,7 @@
         }
       ],
       "paymentMethod": null,
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 68000,
       "sudahBayar": 68000
     },
@@ -9373,7 +9373,7 @@
         }
       ],
       "paymentMethod": null,
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 107000,
       "sudahBayar": 107000
     },
