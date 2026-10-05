@@ -830,9 +830,9 @@
         }
       ],
       "paymentMethod": "QRIS",
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 68000,
-      "sudahBayar": 40000
+      "sudahBayar": 68000
     },
     {
       "emailHash": "6d59526c5f6b0c6e7b880d874e3ce92595472c8869c5e248e9637e88e5091839",
@@ -845,9 +845,9 @@
         }
       ],
       "paymentMethod": "QRIS",
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 95000,
-      "sudahBayar": 60000
+      "sudahBayar": 95000
     },
     {
       "emailHash": "77d16fe362ffac0968d10d869298fa62691ba5363c6b11b0d924e5ae9500025c",
@@ -872,9 +872,9 @@
         }
       ],
       "paymentMethod": "QRIS — 124",
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 159000,
-      "sudahBayar": 124000
+      "sudahBayar": 159000
     },
     {
       "emailHash": "d7d228e56ea714fed214a97be26e16b3b728dbb98d757afd187e76be47886cf5",
@@ -899,9 +899,9 @@
         }
       ],
       "paymentMethod": "QRIS",
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 192000,
-      "sudahBayar": 157000
+      "sudahBayar": 192000
     },
     {
       "emailHash": "68af8633c9fcf096afe61c23e130a5269e84327b37aa121ad91f54ca686eb08d",
@@ -914,9 +914,9 @@
         }
       ],
       "paymentMethod": "QRIS",
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 95000,
-      "sudahBayar": 60000
+      "sudahBayar": 95000
     },
     {
       "emailHash": "32de1f582cb0e8b26545581e3adc7513938452a4fea1f65529ae44565f6b1e6c",
@@ -949,9 +949,9 @@
         }
       ],
       "paymentMethod": "QRIS — 758000",
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 870000,
-      "sudahBayar": 758000
+      "sudahBayar": 870000
     },
     {
       "emailHash": "cc1722c08f791f722e3a5aa51f6b7f4616c6e7bffa12e075d7679ac101a311cc",
@@ -987,9 +987,9 @@
         }
       ],
       "paymentMethod": "QRIS — 55,000 an Dzhrx",
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 83000,
-      "sudahBayar": 55000
+      "sudahBayar": 83000
     },
     {
       "emailHash": "3635421f8b9496a8cd9e299558bfac8ee14ea7e2c021870ec1eefaf3ce7b5375",
@@ -1029,9 +1029,9 @@
         }
       ],
       "paymentMethod": "Transfer — SHOPEEPAY",
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 163000,
-      "sudahBayar": 100000
+      "sudahBayar": 163000
     },
     {
       "emailHash": "86488be088e7633c9c66261830ab0c39f2c907e3d5a44ed7490ef7c499634340",
@@ -1063,9 +1063,9 @@
         }
       ],
       "paymentMethod": "QRIS",
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 34000,
-      "sudahBayar": 15000
+      "sudahBayar": 34000
     },
     {
       "emailHash": "125f93f09bd5a5d22af4ae06c09f3527cf18889091f9f1964365c1765a37f927",
@@ -1078,9 +1078,9 @@
         }
       ],
       "paymentMethod": "QRIS",
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 68000,
-      "sudahBayar": 40000
+      "sudahBayar": 68000
     },
     {
       "emailHash": "72ef79f344dc1d1d8bdb5f5221e0f08193f65a4b5aa3a1447f3de2c29e187106",
@@ -1108,9 +1108,9 @@
         }
       ],
       "paymentMethod": "QRIS",
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 95000,
-      "sudahBayar": 60000
+      "sudahBayar": 95000
     },
     {
       "emailHash": "194ae3e434ad4b98bc34d3fdeb8a14db7ba35815e276ccf837c408f846c02cec",
@@ -1123,9 +1123,9 @@
         }
       ],
       "paymentMethod": "QRIS",
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 95000,
-      "sudahBayar": 60000
+      "sudahBayar": 95000
     },
     {
       "emailHash": "2fda1032f6707a1cf352e1e87bead6d1c496eb7e4e6a426d48e3a26bfb70e130",
@@ -1176,9 +1176,9 @@
         }
       ],
       "paymentMethod": "QRIS — dp case 40k + emoney stickers 15k = 55k",
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 83000,
-      "sudahBayar": 55000
+      "sudahBayar": 83000
     },
     {
       "emailHash": "f016fa1081b991c0bcefd05361df223d7941fa18ed3614ce8aa63c8f9fa7ab97",
@@ -1191,9 +1191,9 @@
         }
       ],
       "paymentMethod": "Transfer — SHOPEEPAY",
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 95000,
-      "sudahBayar": 60000
+      "sudahBayar": 95000
     },
     {
       "emailHash": "1d436590348bd8b413fbb629aa16a927ecb66a762d4c27184ed1e9b103339de5",
@@ -1245,9 +1245,9 @@
         }
       ],
       "paymentMethod": "QRIS",
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 95000,
-      "sudahBayar": 60000
+      "sudahBayar": 95000
     },
     {
       "emailHash": "ddd16a2b68500cc34357fa9961b37fe1fbb75cac711fc4d9da61b3352d9c6167",
@@ -1314,9 +1314,9 @@
         }
       ],
       "paymentMethod": "QRIS",
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 182000,
-      "sudahBayar": 119000
+      "sudahBayar": 182000
     },
     {
       "emailHash": "d324e1982701eac73656f22a9071b349f87223dd0d022a54bcb32f949b6d03e9",
@@ -1341,9 +1341,9 @@
         }
       ],
       "paymentMethod": "QRIS",
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 207000,
-      "sudahBayar": 153000
+      "sudahBayar": 207000
     },
     {
       "emailHash": "f480ddd517c55ae4f4c83b8f0abed32eb4a67196c9b6269efda75f13c1d4540d",
@@ -1398,9 +1398,9 @@
         }
       ],
       "paymentMethod": "QRIS — -",
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 110000,
-      "sudahBayar": 75000
+      "sudahBayar": 110000
     },
     {
       "emailHash": "8b8e55bcb487f016584b6fbb4950d243ed6d2c16c768f51ca3d2ac50645b096e",
@@ -1417,9 +1417,9 @@
         }
       ],
       "paymentMethod": "QRIS",
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 134000,
-      "sudahBayar": 99000
+      "sudahBayar": 134000
     },
     {
       "emailHash": "cdcdc0daea4863fb3e121b02ee34d8df070f282af47fadf203b55e0ea5d2e0e0",
@@ -1447,9 +1447,9 @@
         }
       ],
       "paymentMethod": "QRIS",
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 95000,
-      "sudahBayar": 60000
+      "sudahBayar": 95000
     },
     {
       "emailHash": "a4572f2bb82956e21ec80adf143be554d9b5f6344c455054930549cf65f6ee63",
@@ -1466,9 +1466,9 @@
         }
       ],
       "paymentMethod": "QRIS",
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 114000,
-      "sudahBayar": 79000
+      "sudahBayar": 114000
     },
     {
       "emailHash": "c53a9cc91204d7d72acc0b62aa84864743edfb84e9f5040dbf129e3ff32b757b",
@@ -1515,9 +1515,9 @@
         }
       ],
       "paymentMethod": "QRIS — 60k",
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 95000,
-      "sudahBayar": 60000
+      "sudahBayar": 95000
     },
     {
       "emailHash": "d1235f8a93d3498fe57ec5d1ce420827daf24b3b390bf011fecbf59ed397739a",
@@ -1530,9 +1530,9 @@
         }
       ],
       "paymentMethod": "QRIS",
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 95000,
-      "sudahBayar": 60000
+      "sudahBayar": 95000
     },
     {
       "emailHash": "b6f3342bfee9b3c5b9d42971b9d54b90c168c23250df3f77308d8367da477075",
@@ -1572,9 +1572,9 @@
         }
       ],
       "paymentMethod": "QRIS",
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 95000,
-      "sudahBayar": 60000
+      "sudahBayar": 95000
     },
     {
       "emailHash": "5889981d2b41ddd49aabb0474fd5b45a1a59d3634f7a9b614c1c72f6a46640b3",
@@ -1587,9 +1587,9 @@
         }
       ],
       "paymentMethod": "QRIS",
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 95000,
-      "sudahBayar": 60000
+      "sudahBayar": 95000
     },
     {
       "emailHash": "8385210d27c5a4983ee9cddedab178936064e0feee381e110c63d511f1463fb5",
@@ -1618,9 +1618,9 @@
         }
       ],
       "paymentMethod": "Transfer — SHOPEEPAY",
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 284000,
-      "sudahBayar": 214000
+      "sudahBayar": 284000
     },
     {
       "emailHash": "04c575057111f6878d3586e41a6cc5684c73cd496bed1834a0cb420ea2745c95",
@@ -1672,9 +1672,9 @@
         }
       ],
       "paymentMethod": "QRIS",
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 164000,
-      "sudahBayar": 129000
+      "sudahBayar": 164000
     },
     {
       "emailHash": "cb226649b94c3dcec300e5dd1fa7ababc175d452b6606edf8d6444e4e1f156ec",
@@ -1687,9 +1687,9 @@
         }
       ],
       "paymentMethod": "QRIS",
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 95000,
-      "sudahBayar": 60000
+      "sudahBayar": 95000
     },
     {
       "emailHash": "875cab2da77b9144fa1b83e499314ef8dc058a8493400c8a470780699aefa1e5",
@@ -1702,9 +1702,9 @@
         }
       ],
       "paymentMethod": "QRIS",
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 95000,
-      "sudahBayar": 60000
+      "sudahBayar": 95000
     },
     {
       "emailHash": "cc29b487850788b4eae45644c8dde223ea3dcc09921f2162cc1998af1a1ef0bb",
@@ -1744,9 +1744,9 @@
         }
       ],
       "paymentMethod": "QRIS",
-      "status": "Di Proses",
+      "status": "Sudah Dikonfirmasi",
       "totalHarga": 202000,
-      "sudahBayar": 139000
+      "sudahBayar": 202000
     },
     {
       "emailHash": "a2c7f9dea6139e4a098b4c7475858b2a2ea0840cddab9bafd14b9eff96bb17a2",
