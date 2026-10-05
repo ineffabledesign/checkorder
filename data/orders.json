@@ -9393,25 +9393,6 @@
       "sudahBayar": 95000
     },
     {
-      "emailHash": "6002594c58935cae4b7839bd66251fb83e3fc70b4f3c091560de2db839761c65",
-      "name": "zahra ahya",
-      "contact": "adinnn.ta",
-      "items": [
-        {
-          "label": "tote bag",
-          "detail": "ms. sailor"
-        },
-        {
-          "label": "holo keychain",
-          "detail": "mom said no"
-        }
-      ],
-      "paymentMethod": null,
-      "status": "Di Proses",
-      "totalHarga": 110000,
-      "sudahBayar": 75000
-    },
-    {
       "emailHash": "1a925406e207647465322b37156c3e52df4859905391bffed0d8648c3718ddae",
       "name": "denise",
       "contact": "fn.wolfhr",
