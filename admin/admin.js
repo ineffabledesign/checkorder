@@ -239,7 +239,11 @@ function buildOrderCard(order) {
   if (STATE.dirty.has(order.emailHash)) card.classList.add('is-dirty');
   if (STATE.selected.has(order.emailHash)) card.classList.add('is-selected');
 
-  const itemsSummary = (order.items || []).map(i => i.label).join(', ') || 'Tidak ada item';
+  const itemsHtml = (order.items || []).length
+    ? `<ul class="order-items-list">${order.items.map(i =>
+        `<li><strong>${escapeHtml(i.label)}</strong>: ${escapeHtml(i.detail || '-')}</li>`
+      ).join('')}</ul>`
+    : 'Tidak ada item';
   const badgeClass = styleForStatus(order.status);
   const proof = STATE.proofs[order.emailHash];
 
@@ -249,7 +253,7 @@ function buildOrderCard(order) {
       <div class="order-card-main">
         <div class="order-card-name">${escapeHtml(order.name)}</div>
         <div class="order-card-email">${escapeHtml(order.contact || '')}</div>
-        <div class="order-card-items">${escapeHtml(itemsSummary)}</div>
+        <div class="order-card-items">${itemsHtml}</div>
         ${proof ? '<div class="order-card-proof">📎 Bukti TF masuk</div>' : ''}
       </div>
       <span class="order-card-badge status-pill ${badgeClass}">${escapeHtml(order.status)}</span>

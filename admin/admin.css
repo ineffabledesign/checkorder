@@ -628,3 +628,17 @@
   border-radius: 12px;
   background: var(--cream);
 }
+
+/* ---------- item list on order cards ---------- */
+
+.order-items-list {
+  margin: 6px 0 0;
+  padding-left: 18px;
+  font-size: 13px;
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+.order-items-list li strong {
+  color: var(--pink-deep);
+}
