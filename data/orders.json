@@ -4206,7 +4206,7 @@
         }
       ],
       "paymentMethod": "QRIS",
-      "status": "Di Proses",
+      "status": "Sedang Dikirim",
       "totalHarga": 34000,
       "sudahBayar": 34000
     },
@@ -5650,7 +5650,7 @@
         }
       ],
       "paymentMethod": "QRIS — Phonecase the grumpy 68k DP 40k",
-      "status": "Sudah Dikonfirmasi",
+      "status": "Sedang Dikirim",
       "totalHarga": 68000,
       "sudahBayar": 68000
     },
