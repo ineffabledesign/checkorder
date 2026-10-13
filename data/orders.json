@@ -8208,7 +8208,7 @@
       "paymentMethod": "QRIS",
       "status": "Di Proses",
       "totalHarga": 114000,
-      "sudahBayar": 79000
+      "sudahBayar": 114000
     },
     {
       "emailHash": "cb385faa85a5387d90daced1340aa8790df3d611ed305b1c81b8080cf63f4087",
@@ -8227,7 +8227,7 @@
       "paymentMethod": "QRIS — 100",
       "status": "Di Proses",
       "totalHarga": 163000,
-      "sudahBayar": 100000
+      "sudahBayar": 163000
     },
     {
       "emailHash": "0ed76cbc1b83c779355177b3fd82e579d5390f305d5f6866de4a1c6ea73f2872",
@@ -8562,7 +8562,7 @@
       "paymentMethod": "QRIS",
       "status": "Di Proses",
       "totalHarga": 137000,
-      "sudahBayar": 102000
+      "sudahBayar": 137000
     },
     {
       "emailHash": "e6d0e5accab366b1151a30342b872a6913268e9c93271894d4b4fb5678c3af3f",
@@ -8596,7 +8596,7 @@
       "paymentMethod": "QRIS",
       "status": "Di Proses",
       "totalHarga": 95000,
-      "sudahBayar": 60000
+      "sudahBayar": 95000
     },
     {
       "emailHash": "db415c3b5e1038b406b1a06289011ea59d9cbefa798cc6661887d280ed62e255",
@@ -8866,7 +8866,7 @@
       "paymentMethod": null,
       "status": "Di Proses",
       "totalHarga": 95000,
-      "sudahBayar": 60000
+      "sudahBayar": 95000
     },
     {
       "emailHash": "634b2e5ce91d7bab274d7074a43fde4a075fb3431da0dbe3bc86af22defb4ddd",
@@ -9052,7 +9052,7 @@
       "paymentMethod": null,
       "status": "Di Proses",
       "totalHarga": 164000,
-      "sudahBayar": 129000
+      "sudahBayar": 164000
     },
     {
       "emailHash": "0deee298cfa403a9bb63a5cb022e56402681c75f94c90e31cbafa8501ed58a41",
@@ -9148,7 +9148,7 @@
       "paymentMethod": null,
       "status": "Di Proses",
       "totalHarga": 217000,
-      "sudahBayar": 154000
+      "sudahBayar": 217000
     },
     {
       "emailHash": "04c6eeaea573f0033d09beb2fec4b57e5e6777c6b44d1ffad2684e17bbe9af57",
@@ -9435,7 +9435,7 @@
       "paymentMethod": null,
       "status": "Di Proses",
       "totalHarga": 95000,
-      "sudahBayar": 60000
+      "sudahBayar": 95000
     },
     {
       "emailHash": "2e0b3dd454242670f7fe874b256618eb54a032f90b193a4c6d6dd9ec8d1019e6",
