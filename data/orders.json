@@ -6629,7 +6629,7 @@
         }
       ],
       "paymentMethod": "QRIS",
-      "status": "Di Proses",
+      "status": "Selesai",
       "totalHarga": 334000,
       "sudahBayar": 334000
     },
